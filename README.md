@@ -1,12 +1,12 @@
-# GigaGAN Project page
+# ABAIR Project page
 
-This repository contains additonal results and website source files for [GigaGAN Project](https://mingukkang.github.io/GigaGAN/).
+This repository contains the website source files for [ABAIR](https://aba-ir.github.io/).
 
 ```bib
-@inproceedings{kang2023gigagan,
-  author    = {Kang, Minguk and Zhu, Jun-Yan and Zhang, Richard and Park, Jaesik and Shechtman, Eli and Paris, Sylvain and Park, Taesung},
-  title     = {Scaling up GANs for Text-to-Image Synthesis},
-  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year      = {2023},
+@inproceedings{serrano2024abair,
+  author    = {Serrano-Lozano, David and Herranz, Luis and Su, Shaolin and Vazquez-Corral, Javier},
+  title     = {Adaptive Blind All-in-One Image Restoration},
+  booktitle = {arXiv preprint},
+  year      = {2024},
 }
 ```
