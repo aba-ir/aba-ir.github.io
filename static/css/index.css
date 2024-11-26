@@ -29,6 +29,7 @@ body {
 
 
 .publication-title {
+  margin-top: -20px;
 }
 
 .publication-banner {
@@ -57,7 +58,6 @@ body {
 
 .publication-venue {
     color: #555;
-    width: fit-content;
     font-weight: bold;
 }
 
@@ -99,6 +99,10 @@ body {
     border-radius: 10px !important;
 }
 
+.publication-image-half {
+  width: 50;
+}
+
 .publication-video iframe {
     position: absolute;
     top: 0;
@@ -117,7 +121,9 @@ body {
 .results-carousel .item {
   margin: 5px;
   overflow: hidden;
-  padding: 20px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0;
   font-size: 0;
 }
 
@@ -125,13 +131,57 @@ body {
   margin: 0;
 }
 
-.slider-pagination .slider-page {
-  background: #000000;
+
+.interpolation-panel {
+  background: #f5f5f5;
+  border-radius: 10px;
 }
 
-.eql-cntrb { 
-  font-size: smaller;
+.interpolation-panel .interpolation-image {
+  width: 100%;
+  border-radius: 5px;
 }
 
+.interpolation-video-column {
+}
 
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
 
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+#interpolation-image-wrapper {
+  width: 100%;
+}
+#interpolation-image-wrapper img {
+  border-radius: 5px;
+}
+
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 0%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 200px;
+  height: 200px;
+}
+
+.img-magnifier-glass_init {
+  position: absolute;
+  border: 0px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 0px;
+  height: 0px;
+}
