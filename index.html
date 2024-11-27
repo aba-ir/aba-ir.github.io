@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
-<meta property='og:title' content='GigaGAN for Text-to-Image Synthesis. CVPR2023'/>
-<meta property='og:image' content='https://mingukkang.github.io/GigaGAN/static/images/thumbnail.jpg'/>
-<meta property='og:description' content='a 1B parameter large scale GAN for text-to-image synthesis task. CVPR2023'/>
-<meta property='og:url' content='https://mingukkang.github.io/GigaGAN/'/>
+<meta property='og:title' content='Adaptive Blind All-in-One Image Restoration'/>
+<meta property='og:image' content='https://aba-ir.github.io/static/images/architecture_overview.svg>
+<meta property='og:description' content='A simple yet adaptive approach for blind all-in-one image restoration.'/>
+<meta property='og:url' content='https://aba-ir-github.io'/>
 <meta property='og:image:width' content='1200' />
 <meta property='og:image:height' content='663' />
 <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
 <meta property="og:type" content='website'/>
 <head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VZKE74FPW"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-5DXDV8SF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-9VZKE74FPW');
+    gtag('config', 'GTM-5DXDV8SF');
 </script>
   <meta charset="utf-8">
   <meta name="description"
-        content="Scaling up GANs for Text-to-Image Synthesis">
-  <meta name="keywords" content="GigaGAN, Text-to-Image, GAN, Image synthesis">
+        content="Adaptive Blind All-in-One Image Restoration">
+  <meta name="keywords" content="ABAIR, Blind All-in-One Image Restoration,Image Restoration, Computer Vision">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ABAIR</title>
 
@@ -62,7 +62,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-2 publication-title">Adaptive Blind All-in-One Image Restoration</h1>
-          <div class="is-size-5 publication-authors">
+          <div class="is-size-4 publication-authors">
             <span class="author-block">
               <a href="https://davidserra9.github.io/">David Serrano-Lozano</a><sup>1,2</sup>,</span>
             <span class="author-block">
@@ -85,7 +85,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2303.05511"
+                <a href="https://aba-ir.github.io"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -95,12 +95,12 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/mingukkang/GigaGAN/tree/main/evaluation"
+                <a href="https://github.com/davidserra9/abair/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code (soon)</span>
+                  <span>Code</span>
                   </a>
               </span>
             </div>
@@ -206,7 +206,7 @@
 
       <div class="content has-text-justified">
         <p>
-          We propose a pre-training strategy based on synthetic degradations, which are parameterized to control both the type and severity of degradations, including rain, blur, noise, haze, and low-light conditions. Furthermore, we introduce a CutMix-based approach to seamlessly integrate multiple degradation types and severity levels within the same image.
+          We propose a pre-training strategy based on synthetic degradations, which are parameterized to control both the type and severity of degradations, including rain, blur, noise, haze, and low-light conditions.
         </p>
       </div>
 
@@ -246,6 +246,27 @@
             type="video/mp4">
           </video>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Building a Robust Baseline Model</h2>
+
+      <div class="content has-text-justified">
+        <p>
+          To establish a strong weight initialization for subsequent fine-tuning, we propose a degradation CutMix method. This approach seamlessly blends multiple degradation types and severity levels within a single image, enhancing the model’s ability to generalize. Additionally, we incorporate an auxiliary segmentation head and optimize the model using a Cross-Entropy Loss to perform pixel-wise degradation type estimation. Notably, the segmentation head is only utilized during Phase I and is excluded in Phases II and III.
+        </p>
+      </div>
+      <div class="item item-haze">
+        <video poster="" id="overview" autoplay controls muted loop height="100%">\
+          <!-- Your video file here -->
+          <source src="static/videos/CutMix.mp4"
+          type="video/mp4">
+        </video>
       </div>
     </div>
   </div>
@@ -323,7 +344,7 @@
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            Website adapted from the <a href="https://github.com/mingukkang/GigaGAN/tree/main">GigaGAN</a> and  <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> websites.
+            Website adapted from the <a href="https://github.com/mingukkang/GigaGAN/tree/main">GigaGAN</a>, <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> and <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Eliahu Horwitz</a> websites.
           </p>
         </div>
       </div>
