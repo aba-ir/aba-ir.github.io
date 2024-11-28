@@ -85,12 +85,12 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://aba-ir.github.io"
+                <a href="https://arxiv.org/abs/2411.18412"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv paper</span>
                 </a>
               </span>
               <!-- Code Link. -->
@@ -100,7 +100,7 @@
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (soon)</span>
                   </a>
               </span>
             </div>
@@ -308,11 +308,15 @@
         <h2 class="title is-3">Quantitative results</h2>
         <div class="content has-text-justified">
           <p>
-            We evaluate ABAIR on a five-degradation setup for all-in-one image restoration. Additionally, we assess our method on a three-degradation setup, unseen datasets excluded from training, novel degradation types, and mixed degradation scenarios. The results of our approach, compared to the previous state-of-the-art methods, are summarized in the table below. For more detailed quantitative results, please refer to our paper.
+            We evaluate ABAIR in a comprehensive five-degradation setup designed for all-in-one image restoration. Furthermore, we test its performance in a three-degradation setup, on unseen datasets excluded from training, on novel degradation types, and in mixed degradation scenarios. The table below summarizes our method’s performance on the five-degradation setup, demonstrating its superiority over previous state-of-the-art methods. Additionally, we present a radial plot that highlights ABAIR’s performance across all degradation scenarios: known, unseen, and mixed. For a more detailed analysis and quantitative results, please refer to our paper.
           </p>
         </div>
         <div class="content has-text-centered">
           <img src="./static/images/qualitative_results.png">
+        </div>
+
+        <div class="content has-text-centered">
+          <img src="./static/images/radial_plot.svg" style="width: 75%; max-width: 450px; height: auto;">
         </div>
 
       </div>
@@ -324,11 +328,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title"><a id="bibtex">BibTeX</a></h2>
-    <pre><code>@inproceedings{serrano2024abair,
-  author    = {Serrano-Lozano, David and Herranz, Luis and Su, Shaolin and Vazquez-Corral, Javier},
-  title     = {Adaptive Blind All-in-One Image Restoration},
-  booktitle = {arXiv preprint},
-  year      = {2024},
+    <pre><code>@article{serrano2024abair,
+      title={Adaptive Blind All-in-One Image Restoration},
+      author={Serrano-Lozano, David and Herranz, Luis and Su, Shaolin and Vazquez-Corral, Javier},
+      journal={arXiv preprint arXiv:2411.18412},
+      year={2024}
 }</code></pre>
   </div>
 </section>
